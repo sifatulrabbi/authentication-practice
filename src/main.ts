@@ -11,7 +11,7 @@ async function bootstrap() {
       secret: 'keyboard-cat', // get env vars
       resave: false,
       saveUninitialized: false,
-      cookie: { maxAge: 3600000 },
+      cookie: { maxAge: 60 * 60 * 24 },
     }),
   );
 
